@@ -388,13 +388,13 @@ html[lang="ja"] .footer-brand-name {
 /* Japanese mobile footer brand adjustments */
 @media (max-width: 768px) {
     html[lang="ja"] .footer-brand-name {
-        font-size: 24px;
+        font-size: 50px;
     }
 }
 
 @media (max-width: 480px) {
     html[lang="ja"] .footer-brand-name {
-        font-size: 20px;
+        font-size: 50px;
     }
 }
 
@@ -1491,6 +1491,14 @@ html[lang="ja"] .footer-brand-name {
     word-break: keep-all;
 }
 
+.footer-brand-lkc {
+    color: var(--accent-color);
+}
+
+.footer-brand-consulting {
+    color: var(--white);
+}
+
 /* Toast Notification */
 .toast {
     position: fixed;
@@ -1719,7 +1727,7 @@ html[lang="ja"] .footer-brand-name {
     }
 
     .footer-brand-name {
-        font-size: 24px;
+        font-size: 50px;
     }
 
     /* Toast */
@@ -1738,7 +1746,7 @@ html[lang="ja"] .footer-brand-name {
     }
     
     .footer-brand-name {
-        font-size: 20px;
+        font-size: 50px;
         letter-spacing: -0.005em;
     }
 
@@ -1914,7 +1922,7 @@ html[lang="ja"] .footer-brand-name {
 
     /* Footer */
     .footer-brand-name {
-        font-size: 18px;
+        font-size: 50px;
         line-height: 1.1;
         letter-spacing: -0.01em;
     }
