@@ -1462,7 +1462,7 @@ html[lang="ja"] .footer-brand-name {
 }
 
 .footer-brand-name {
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: 150px;
     font-weight: 700;
     color: var(--white);
     margin: 0;
@@ -1706,7 +1706,7 @@ html[lang="ja"] .footer-brand-name {
     }
 
     .footer-brand-name {
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-size: 150px;
     }
 
     /* Toast */
@@ -1725,7 +1725,7 @@ html[lang="ja"] .footer-brand-name {
     }
     
     .footer-brand-name {
-        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        font-size: 150px;
         letter-spacing: -0.005em;
     }
 
@@ -1901,7 +1901,7 @@ html[lang="ja"] .footer-brand-name {
 
     /* Footer */
     .footer-brand-name {
-        font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+        font-size: 150px;
         line-height: 1.1;
         letter-spacing: -0.01em;
     }
@@ -1970,7 +1970,7 @@ html[lang="ja"] .footer-brand-name {
     }
     
     .footer-brand-name {
-        font-size: clamp(2.5rem, 7vw, 3.5rem);
+        font-size: 150px;
     }
 }
 
