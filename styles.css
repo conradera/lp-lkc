@@ -377,6 +377,13 @@ html[lang="ja"] .section-description {
     line-height: 1.5;
 }
 
+/* Japanese footer brand name adjustments */
+html[lang="ja"] .footer-brand-name {
+    font-size: clamp(35px, 7vw, 100px);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+}
+
 .hero-title-accent {
     color: var(--accent-color);
 }
@@ -1453,7 +1460,7 @@ html[lang="ja"] .section-description {
 }
 
 .footer-brand-name {
-    font-size: clamp(60px, 12vw, 200px);
+    font-size: clamp(40px, 8vw, 120px);
     font-weight: 700;
     color: var(--white);
     margin: 0;
@@ -1465,6 +1472,7 @@ html[lang="ja"] .section-description {
     width: 100%;
     display: block;
     text-align: center;
+    padding: 0 1rem;
 }
 
 /* Toast Notification */
@@ -1695,7 +1703,8 @@ html[lang="ja"] .section-description {
     }
 
     .footer-brand-name {
-        font-size: clamp(50px, 10vw, 80px);
+        font-size: clamp(35px, 7vw, 60px);
+        padding: 0 0.5rem;
     }
 
     /* Toast */
@@ -1714,8 +1723,9 @@ html[lang="ja"] .section-description {
     }
     
     .footer-brand-name {
-        font-size: clamp(25px, 6vw, 35px);
+        font-size: clamp(20px, 5vw, 30px);
         letter-spacing: -0.005em;
+        padding: 0 0.25rem;
     }
 
     /* Typography */
@@ -1890,9 +1900,10 @@ html[lang="ja"] .section-description {
 
     /* Footer */
     .footer-brand-name {
-        font-size: clamp(30px, 8vw, 40px);
+        font-size: clamp(25px, 6vw, 35px);
         line-height: 1;
         letter-spacing: -0.01em;
+        padding: 0 0.5rem;
     }
 
     .footer-main {
@@ -1959,7 +1970,8 @@ html[lang="ja"] .section-description {
     }
     
     .footer-brand-name {
-        font-size: clamp(80px, 11vw, 120px);
+        font-size: clamp(60px, 9vw, 100px);
+        padding: 0 1.5rem;
     }
 }
 
@@ -1973,18 +1985,21 @@ html[lang="ja"] .section-description {
     }
     
     .footer-brand-name {
-        font-size: clamp(120px, 15vw, 200px);
+        font-size: clamp(80px, 12vw, 150px);
+        padding: 0 2rem;
     }
 }
 
 @media (min-width: 1440px) {
     .footer-brand-name {
-        font-size: clamp(150px, 18vw, 250px);
+        font-size: clamp(100px, 15vw, 200px);
+        padding: 0 2.5rem;
     }
 }
 
 @media (min-width: 1920px) {
     .footer-brand-name {
-        font-size: clamp(180px, 20vw, 300px);
+        font-size: clamp(120px, 18vw, 250px);
+        padding: 0 3rem;
     }
 }
