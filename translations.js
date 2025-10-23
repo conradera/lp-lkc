@@ -449,7 +449,7 @@ const translations = {
             }
         },
         footer: {
-            company: "LKCコンサルティング",
+            company: "LKC Consulting",
             description: "アフリカ・東南アジア市場拡大の信頼できるビジネスプロデューサー。東京から世界へ、あなたの野望に寄り添います。",
             services: {
                 title: "サービス",
