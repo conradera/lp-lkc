@@ -1,0 +1,868 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKC Consulting - Business Producer for Africa & Southeast Asia</title>
+    <meta name="theme-color" content="#1E2D56">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="#" class="nav-logo" id="nav-logo" aria-label="LKC Consulting Home">
+                    <span class="logo-accent">LKC</span> Consulting
+                </a>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-desktop">
+            <button class="nav-link" onclick="scrollToSection('process')" data-i18n="nav.process">Our Process</button>
+            <button class="nav-link" onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button>
+            <button class="btn btn-primary" onclick="scrollToSection('contact')" data-i18n="nav.getStarted">Get Started</button>
+            <button class="language-toggle" onclick="toggleLanguage()" id="language-toggle">
+                <span data-i18n="nav.language">EN</span>
+            </button>
+        </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        <!-- Mobile Menu -->
+        <div class="nav-mobile" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+            <button class="nav-mobile-link" onclick="scrollToSection('process')" data-i18n="nav.process">Our Process</button>
+            <button class="nav-mobile-link" onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button>
+            <button class="btn btn-primary nav-mobile-btn" onclick="scrollToSection('contact')" data-i18n="nav.getStarted">Get Started</button>
+            <button class="language-toggle nav-mobile-btn" onclick="toggleLanguage()" id="mobile-language-toggle">
+                <span data-i18n="nav.language">EN</span>
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Decorative background elements -->
+        <div class="hero-bg">
+            <div class="hero-bg-circle hero-bg-circle-1"></div>
+            <div class="hero-bg-circle hero-bg-circle-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Subtitle -->
+                <div class="hero-subtitle">
+                    <p>LKC Consulting</p>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Guiding Global Ambitions with Local Insight
+                </h1>
+
+                <!-- Subtext -->
+                <p class="hero-description" data-i18n="hero.description">
+                    Empowering Japanese businesses to expand confidently into Africa & Southeast Asia —
+                    from initial research to on-ground execution.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" onclick="scrollToSection('contact')" data-i18n="hero.cta.plan">
+                        Let's Plan Together
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="scrollToSection('process')" data-i18n="hero.cta.learn">
+                        Learn Our Approach
+                    </button>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">54</div>
+                        <div class="hero-stat-label" data-i18n="hero.stats.countries">African Countries</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">10+</div>
+                        <div class="hero-stat-label" data-i18n="hero.stats.experience">Years Experience</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">100%</div>
+                        <div class="hero-stat-label" data-i18n="hero.stats.partnership">Partnership Focus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll">
+            <div class="hero-scroll-indicator">
+                <div class="hero-scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empathy Section -->
+    <section class="empathy">
+        <div class="container">
+            <div class="empathy-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="empathy.subtitle">We Understand Your Challenges</p>
+                    <h2 class="section-title" data-i18n="empathy.title">
+                        Expanding Globally<br />Shouldn't Feel This Hard
+                    </h2>
+                    <p class="section-description" data-i18n="empathy.description">
+                        Many Japanese companies face the same roadblocks when exploring opportunities in emerging markets.
+                        You're not alone — and there's a better way forward.
+                    </p>
+                </div>
+
+                <!-- Pain Points Grid -->
+                <div class="empathy-grid">
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="empathy.challenges.intelligence">Limited Market Intelligence</h3>
+                            <p data-i18n="empathy.challenges.intelligenceDesc">Struggling to access trustworthy, up-to-date information about African and Southeast Asian markets.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-pause-circle"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="empathy.challenges.stagnation">Post-Visit Stagnation</h3>
+                            <p data-i18n="empathy.challenges.stagnationDesc">After business trips or trade fairs, communication and progress often stall once returning to Japan.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="empathy.challenges.partners">Partner Reliability Gap</h3>
+                            <p data-i18n="empathy.challenges.partnersDesc">Difficulty finding and vetting reliable local partners who understand Japanese business culture.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="empathy.challenges.capacity">Internal Capacity Constraints</h3>
+                            <p data-i18n="empathy.challenges.capacityDesc">Limited bandwidth to manage overseas follow-up, PDCA cycles, and sustained engagement.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="empathy.challenges.culture">Cultural & Communication Misalignment</h3>
+                            <p data-i18n="empathy.challenges.cultureDesc">Even after forming partnerships, differences in communication and work culture hinder smooth collaboration.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="empathy.challenges.localization">Resource Localization Challenges</h3>
+                            <p data-i18n="empathy.challenges.localizationDesc">Adapting products, services, and messaging to local market needs and expectations remains difficult.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transition Statement -->
+                <div class="empathy-transition">
+                    <div class="empathy-transition-content">
+                        <p data-i18n="empathy.transition">
+                            <span class="text-accent">That's exactly where we come in.</span><br />
+                            As your Business Producer, we bridge the gap between ambition and execution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-left">
+                    <p class="section-subtitle" data-i18n="solution.subtitle">Our Solution</p>
+                    <h2 class="section-title" data-i18n="solution.title">
+                        Your Bridge Between<br />
+                        <span class="text-accent">Vision and Execution</span>
+                    </h2>
+                    <p class="section-description" data-i18n="solution.description">
+                        LKC Consulting acts as your <strong>Business Producer</strong> — 
+                        not just a consultant who delivers reports. We walk alongside you through every phase,
+                        from initial curiosity to sustainable market presence.
+                    </p>
+                    
+                    <div class="solution-quote">
+                        <p data-i18n="solution.quote">
+                            "A consultant hands you a map. A producer walks the journey with you."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="solution-right">
+                    <div class="solution-list">
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="solution.features.intelligence">Market Intelligence & Research</h3>
+                                <p data-i18n="solution.features.intelligenceDesc">Access to real-time data and insights across 54 African countries and Southeast Asian markets.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="solution.features.network">On-Ground Network</h3>
+                                <p data-i18n="solution.features.networkDesc">Vetted local partners, industry contacts, and government connections ready to activate.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="solution.features.execution">End-to-End Execution Support</h3>
+                                <p data-i18n="solution.features.executionDesc">From initial research through planning, site visits, partner matching, to implementation.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="solution.features.funding">Grant & Funding Assistance</h3>
+                                <p data-i18n="solution.features.fundingDesc">Support with JICA Biz and other funding programs to reduce financial risk.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="solution.features.pdca">Continuous PDCA Partnership</h3>
+                                <p data-i18n="solution.features.pdcaDesc">Ongoing optimization and follow-up to ensure projects move from plan to reality.</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="solution.features.perspective">Cross-Regional Perspective</h3>
+                                <p data-i18n="solution.features.perspectiveDesc">When Africa isn't the right fit, we'll recommend Philippines, Singapore, or other markets honestly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producer Explainer Section -->
+    <section class="producer">
+        <div class="container">
+            <div class="producer-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="producer.subtitle">Our Role</p>
+                    <h2 class="section-title" data-i18n="producer.title">What Is a Business Producer?</h2>
+                    <p class="section-description" data-i18n="producer.description">
+                        Understanding the difference between traditional consulting and partnership-driven execution.
+                    </p>
+                </div>
+
+                <!-- Comparison Grid -->
+                <div class="producer-comparison">
+                    <!-- Traditional Consultant -->
+                    <div class="producer-card producer-card-traditional">
+                        <div class="producer-card-header">
+                            <i class="fas fa-file-text"></i>
+                            <h3 data-i18n="producer.traditional.title">Traditional Consultant</h3>
+                        </div>
+                        <ul class="producer-card-list">
+                            <li data-i18n="producer.traditional.reports">Delivers comprehensive reports and analysis</li>
+                            <li data-i18n="producer.traditional.engagement">Engagement ends after recommendations</li>
+                            <li data-i18n="producer.traditional.implementation">Client handles implementation alone</li>
+                            <li data-i18n="producer.traditional.network">Limited local network activation</li>
+                            <li data-i18n="producer.traditional.approach">Theory-focused approach</li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Producer (LKC) -->
+                    <div class="producer-card producer-card-lkc">
+                        <div class="producer-card-header">
+                            <i class="fas fa-users"></i>
+                            <h3 data-i18n="producer.lkc.title">Business Producer (LKC)</h3>
+                        </div>
+                        <ul class="producer-card-list producer-card-list-lkc">
+                            <li><span class="check-mark">✓</span> <span data-i18n="producer.lkc.strategy">Co-creates strategy alongside your team</span></li>
+                            <li><span class="check-mark">✓</span> <span data-i18n="producer.lkc.engagement">Stays engaged through full implementation</span></li>
+                            <li><span class="check-mark">✓</span> <span data-i18n="producer.lkc.execution">Handles execution with you, not for you</span></li>
+                            <li><span class="check-mark">✓</span> <span data-i18n="producer.lkc.network">Activates trusted local networks immediately</span></li>
+                            <li><span class="check-mark">✓</span> <span data-i18n="producer.lkc.partnership">Execution-first, PDCA-driven partnership</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Key Principle -->
+                <div class="producer-principle">
+                    <div class="producer-principle-content">
+                        <i class="fas fa-lightbulb"></i>
+                        <p data-i18n="producer.principle">
+                            <span class="text-accent">Partnership</span> over transactions.{" "}
+                            <span class="text-accent">Execution</span> over analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="process-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="process.subtitle">How We Work</p>
+                    <h2 class="section-title" data-i18n="process.title">6-Step Accompaniment Process</h2>
+                    <p class="section-description" data-i18n="process.description">
+                        A structured yet flexible approach that walks alongside your business 
+                        from curiosity to sustainable market presence.
+                    </p>
+                </div>
+
+                <!-- Process Timeline -->
+                <div class="process-timeline-tree">
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 01</div>
+                                <h3 data-i18n="process.steps.research">Research & Discovery</h3>
+                                <p data-i18n="process.steps.researchDesc">Deep-dive market analysis, competitor mapping, and opportunity identification across target regions.</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">01</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-file-check"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 02</div>
+                                <h3 data-i18n="process.steps.planning">Strategic Planning</h3>
+                                <p data-i18n="process.steps.planningDesc">Co-create entry strategies, business models, and risk mitigation plans aligned with your capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">02</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 03</div>
+                                <h3 data-i18n="process.steps.support">On-Site Support</h3>
+                                <p data-i18n="process.steps.supportDesc">Accompany you on market visits, facilitate meetings, and provide real-time cultural and business navigation.</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">03</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 04</div>
+                                <h3 data-i18n="process.steps.matching">Business Matching</h3>
+                                <p data-i18n="process.steps.matchingDesc">Connect you with pre-vetted local partners, distributors, and stakeholders from our trusted network.</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">04</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 05</div>
+                                <h3 data-i18n="process.steps.implementation">Implementation</h3>
+                                <p data-i18n="process.steps.implementationDesc">Support operational setup, negotiations, contract development, and initial market activation.</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">05</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 06</div>
+                                <h3 data-i18n="process.steps.optimization">PDCA Optimization</h3>
+                                <p data-i18n="process.steps.optimizationDesc">Continuous monitoring, feedback loops, and adaptive improvements to ensure sustainable growth.</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">06</div>
+                    </div>
+                </div>
+
+                <!-- Bottom CTA -->
+                <div class="process-cta">
+                    <div class="process-cta-content">
+                        <p data-i18n="process.cta.unique">Every business is unique. We adapt this framework to your specific needs, timeline, and ambitions.</p>
+                        <p><strong data-i18n="process.cta.discuss">Let's discuss how this process can work for you.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="container">
+            <div class="case-studies-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="trackRecord.subtitle">Proven Track Record</p>
+                    <h2 class="section-title" data-i18n="trackRecord.title">Partnership Success Stories</h2>
+                    <p class="section-description" data-i18n="trackRecord.description">
+                        Real projects with Japanese companies across diverse industries and regions.
+                        (Details anonymized for client confidentiality.)
+                    </p>
+                </div>
+
+                <!-- Cases Grid -->
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Manufacturing</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">East Africa</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="trackRecord.cases.manufacturing.title">Factory Equipment Distribution</h3>
+                        
+                        <p class="case-study-description" data-i18n="trackRecord.cases.manufacturing.description">
+                            Supported a Japanese machinery manufacturer in establishing distribution partnerships across Kenya, Tanzania, and Ethiopia.
+                        </p>
+                        
+                        <div class="case-study-outcomes">
+                            <p class="case-study-outcomes-label" data-i18n="caseStudies.outcomes.label">Key Outcomes:</p>
+                            <ul class="case-study-outcomes-list">
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.manufacturing.item1">3 local distributors secured</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.manufacturing.item2">Market entry in 18 months</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.manufacturing.item3">Grant funding support</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Consumer Goods</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">Southeast Asia</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="trackRecord.cases.fmcg.title">FMCG Market Entry</h3>
+                        
+                        <p class="case-study-description" data-i18n="trackRecord.cases.fmcg.description">
+                            Guided a Japanese food products company through regulatory, logistics, and retail partnership development in Philippines and Vietnam.
+                        </p>
+                        
+                        <div class="case-study-outcomes">
+                            <p class="case-study-outcomes-label" data-i18n="caseStudies.outcomes.label">Key Outcomes:</p>
+                            <ul class="case-study-outcomes-list">
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.fmcg.item1">Retail network established</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.fmcg.item2">Regulatory approval obtained</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.fmcg.item3">Pilot stores launched</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Agriculture</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">West Africa</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="trackRecord.cases.agritech.title">AgriTech Partnership</h3>
+                        
+                        <p class="case-study-description" data-i18n="trackRecord.cases.agritech.description">
+                            Connected a Japanese agtech startup with farming cooperatives and government agencies in Ghana and Nigeria.
+                        </p>
+                        
+                        <div class="case-study-outcomes">
+                            <p class="case-study-outcomes-label" data-i18n="caseStudies.outcomes.label">Key Outcomes:</p>
+                            <ul class="case-study-outcomes-list">
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.agritech.item1">2 pilot projects launched</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.agritech.item2">Government MoU signed</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.agritech.item3">Local team recruited</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Energy</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">Southern Africa</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="trackRecord.cases.energy.title">Renewable Energy Infrastructure</h3>
+                        
+                        <p class="case-study-description" data-i18n="trackRecord.cases.energy.description">
+                            Facilitated feasibility studies and stakeholder engagement for solar energy projects in Zambia and Mozambique.
+                        </p>
+                        
+                        <div class="case-study-outcomes">
+                            <p class="case-study-outcomes-label" data-i18n="caseStudies.outcomes.label">Key Outcomes:</p>
+                            <ul class="case-study-outcomes-list">
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.energy.item1">Feasibility completed</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.energy.item2">Investor network activated</span></li>
+                                <li><span class="check-mark">✓</span> <span data-i18n="caseStudies.outcomes.energy.item3">JV discussions initiated</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="case-studies-disclaimer">
+                    <p data-i18n="caseStudies.disclaimer">
+                        Client confidentiality is paramount. These case studies represent real engagements with identifying details modified. 
+                        Detailed references available upon NDA execution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="team-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="team.subtitle">Our Team & Network</p>
+                    <h2 class="section-title" data-i18n="team.title">
+                        Rooted in Tokyo,<br />
+                        Connected Globally
+                    </h2>
+                    <p class="section-description" data-i18n="team.description">
+                        LKC Consulting brings together Japanese business understanding, 
+                        global market expertise, and deep local networks across Africa and Southeast Asia.
+                    </p>
+                </div>
+
+                <!-- Highlights Grid -->
+                <div class="team-highlights">
+                    <div class="team-highlight">
+                        <div class="team-highlight-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 data-i18n="team.highlights.countries">54 African Countries</h3>
+                        <p data-i18n="team.highlights.countriesDesc">Network coverage across the entire continent, from Morocco to South Africa.</p>
+                    </div>
+
+                    <div class="team-highlight">
+                        <div class="team-highlight-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 data-i18n="team.highlights.tokyo">Tokyo 2020 & Africa Travel</h3>
+                        <p data-i18n="team.highlights.tokyoDesc">Affiliated with organizations connecting Japan and emerging markets through sports and tourism.</p>
+                    </div>
+
+                    <div class="team-highlight">
+                        <div class="team-highlight-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 data-i18n="team.highlights.jica">JICA & Government Relations</h3>
+                        <p data-i18n="team.highlights.jicaDesc">Experience supporting clients with public funding programs and government partnerships.</p>
+                    </div>
+
+                    <div class="team-highlight">
+                        <div class="team-highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-i18n="team.highlights.multilingual">Multilingual Team</h3>
+                        <p data-i18n="team.highlights.multilingualDesc">Fluent in Japanese, English, French, Portuguese, and various Southeast Asian languages.</p>
+                    </div>
+                </div>
+
+                <!-- Team Philosophy -->
+                <div class="team-philosophy">
+                    <div class="team-philosophy-content">
+                        <h3 data-i18n="team.philosophy.title">Our Philosophy</h3>
+                        <p data-i18n="team.philosophy.description1">
+                            We believe in <span class="text-accent">honest counsel</span> over sales pressure. 
+                            If Africa isn't the right fit for your business model, we'll tell you — and suggest 
+                            alternatives like Southeast Asia or other markets. Our success is measured by your 
+                            sustainable growth, not deal volume.
+                        </p>
+                        <p data-i18n="team.philosophy.description2">
+                            Every team member has lived and worked across multiple continents, 
+                            combining <span class="text-accent">cross-cultural fluency</span> with 
+                            practical business execution experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Affiliations Note -->
+                <div class="team-affiliations">
+                    <p data-i18n="team.affiliations">
+                        Affiliated with leading organizations connecting Japan to emerging markets through 
+                        sports, culture, and business development initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Start Your Journey</p>
+                    <h2 class="section-title" data-i18n="contact.title">
+                        Let's Explore Your<br />
+                        Next Opportunity Together
+                    </h2>
+                    <p class="section-description" data-i18n="contact.description">
+                        Whether you're in early exploration or ready to take concrete steps, 
+                        we're here to listen and guide. No pressure, just partnership.
+                    </p>
+                </div>
+
+                <div class="contact-main">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-info-header">
+                            <h3 data-i18n="contact.info.title">Get in Touch</h3>
+                            <p data-i18n="contact.info.description">
+                                We typically respond within 24 hours. For urgent matters, 
+                                please call us directly. All initial consultations are 
+                                confidential and non-binding.
+                            </p>
+                        </div>
+
+                        <!-- Contact Details -->
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <p class="contact-detail-label" data-i18n="contact.details.email">Email</p>
+                                    <a href="mailto:info+consulting@lim-kawano.com" class="contact-detail-link">
+                                        info+consulting@lim-kawano.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <p class="contact-detail-label" data-i18n="contact.details.office">Office</p>
+                                    <p class="contact-detail-text">
+                                        <span data-i18n="contact.details.location">Tokyo, Japan</span><br />
+                                        <span class="contact-detail-note" data-i18n="contact.details.addressNote">
+                                            (Exact address shared after initial consultation)
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="contact-hours">
+                            <h4 data-i18n="contact.hours.title">Business Hours</h4>
+                            <div class="contact-hours-content">
+                                <p data-i18n="contact.hours.weekdays">Monday – Friday: 9:00 AM – 6:00 PM JST</p>
+                                <p class="contact-hours-note" data-i18n="contact.hours.weekends">
+                                    Weekend consultations available by appointment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.form.name">Name *</label>
+                                <input type="text" id="name" name="name" required minlength="2" maxlength="100" placeholder="Tanaka Taro" data-i18n-placeholder="contact.form.namePlaceholder" autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" data-i18n="contact.form.company">Company Name *</label>
+                                <input type="text" id="company" name="company" required minlength="2" maxlength="100" placeholder="ABC Corporation" data-i18n-placeholder="contact.form.companyPlaceholder" autocomplete="organization">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.form.email">Email Address *</label>
+                                <input type="email" id="email" name="email" required maxlength="254" placeholder="tanaka@example.com" data-i18n-placeholder="contact.form.emailPlaceholder" autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.form.phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" maxlength="20" placeholder="+81-90-xxxx-xxxx (optional)" data-i18n-placeholder="contact.form.phonePlaceholder" autocomplete="tel">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.form.message">Message *</label>
+                                <textarea id="message" name="message" required minlength="10" maxlength="2000" rows="5" placeholder="Tell us about your business, expansion interests, timeline, or any specific questions..." data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                                <span class="btn-text" data-i18n="contact.form.submit">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <p class="form-disclaimer" data-i18n="contact.form.disclaimer">
+                                By submitting, you agree to our privacy policy. We will not share 
+                                your information with third parties.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <!-- Company Info -->
+                    <div class="footer-company">
+                        <h3 data-i18n="footer.company">LKC Consulting</h3>
+                        <p data-i18n="footer.description">
+                            Your trusted Business Producer for Africa and Southeast Asia market expansion.
+                            From Tokyo to the world, we walk alongside your ambitions.
+                        </p>
+                        <div class="footer-social">
+                            <a href="mailto:info+consulting@lim-kawano.com" class="footer-social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.services.title">Services</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#process" data-i18n="footer.services.research">Market Research</a></li>
+                            <li><a href="#process" data-i18n="footer.services.planning">Strategic Planning</a></li>
+                            <li><a href="#process" data-i18n="footer.services.matching">Partner Matching</a></li>
+                            <li><a href="#process" data-i18n="footer.services.grant">Grant Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Regions -->
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.regions.title">Regions</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#" data-i18n="footer.regions.eastAfrica">East Africa</a></li>
+                            <li><a href="#" data-i18n="footer.regions.westAfrica">West Africa</a></li>
+                            <li><a href="#" data-i18n="footer.regions.southernAfrica">Southern Africa</a></li>
+                            <li><a href="#" data-i18n="footer.regions.southeastAsia">Southeast Asia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p class="footer-copyright" data-i18n="footer.copyright">
+                        © <span id="current-year">2024</span> LKC Consulting. All rights reserved.
+                    </p>
+                    <div class="footer-legal">
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="#contact" data-i18n="footer.contact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Large Company Name -->
+                <div class="footer-brand">
+                    <h1 class="footer-brand-name" data-i18n="footer.company">LKC Consulting</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message" data-i18n="toast.success">Message sent successfully! We'll respond within 24 hours.</span>
+        </div>
+    </div>
+
+    <script src="translations.js?v=3"></script>
+    <script src="script.js?v=3"></script>
+    </body>
+  </html>
